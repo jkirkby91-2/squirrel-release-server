@@ -1,5 +1,5 @@
 import { EntityInterface } from '../../../../common/interfaces/entity.interface';
 
-export interface ChannelEntityInterface extends EntityInterface {
+export interface PlatformEntityInterface extends EntityInterface {
     readonly name: string;
 }

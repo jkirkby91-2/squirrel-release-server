@@ -1,12 +1,12 @@
 import { Test } from '@nestjs/testing';
-import { CrashReport } from './crashReport.entity';
+import { Channel } from './channel.entity';
 
-let instance: CrashReport;
+let instance: Channel;
 
 beforeEach(() => {
-    instance = new CrashReport();
+    instance = new Channel();
 });
 
-it('Check we have a CrashReport class.', () => {
-    expect(instance).toBeInstanceOf(CrashReport);
+it('Check we have a Channel class.', () => {
+    expect(instance).toBeInstanceOf(Channel);
 });
