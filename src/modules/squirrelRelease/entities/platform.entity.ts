@@ -3,7 +3,7 @@ import { AbstractEntity } from '../../../common/entities/abstract.entity';
 import { ChannelEntityInterface } from './interfaces/channel.entity.interface';
 
 @Entity()
-export class Channel extends AbstractEntity implements ChannelEntityInterface {
+export class Platform extends AbstractEntity implements ChannelEntityInterface {
   @Column('text', { nullable: true })
   name: string;
 }

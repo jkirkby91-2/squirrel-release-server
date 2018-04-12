@@ -8,7 +8,7 @@ export const databaseProviders = [{
     port: Number(process.env.DB_PORT) || 5432,
     username: process.env.DB_USER || 'postgres',
     password: process.env.DB_PASS || 'password',
-    database: process.env.DB_NAME || 'crashreport',
+    database: process.env.DB_NAME || 'release_server',
     entities: [
       __dirname + '/../**/*.entity{.ts,.js}',
     ],

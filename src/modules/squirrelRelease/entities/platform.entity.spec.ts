@@ -1,14 +1,14 @@
 import { Test } from '@nestjs/testing';
-import { Channel } from './channel.entity';
+import { Platform } from './platform.entity';
 import { AbstractEntity } from '../../../common/entities/abstract.entity';
 
-let instance: Channel;
+let instance: Platform;
 
 beforeEach(() => {
-    instance = new Channel();
+    instance = new Platform();
 });
 
-it('Check we have a Channel class.', () => {
-    expect(instance).toBeInstanceOf(Channel);
+it('Check we have a Platform class.', () => {
+    expect(instance).toBeInstanceOf(Platform);
     expect(instance).toBeInstanceOf(AbstractEntity);
 });
