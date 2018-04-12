@@ -1,16 +1,19 @@
 import { Repository } from 'typeorm';
 import { Component, Inject } from '@nestjs/common';
 import { Asset } from '../entities/asset.entity';
+import { AbstractServiceRepository } from '../../../common/repositories/abstract.repository';
 import { ResourceRepositoryInterface } from '../../../common/interfaces/resource.repository.interface';
 
 @Component()
-export class AssetService implements ResourceRepositoryInterface {
+export class AssetService extends AbstractServiceRepository implements ResourceRepositoryInterface {
 
   /**
    * @param assetRepository
    */
   constructor(
-    @Inject('AssetRepositoryToken') private readonly assetRepository: Repository<Asset>) {}
+    @Inject('AssetRepositoryToken') private readonly assetRepository: Repository<Asset>) {
+      super();
+    }
 
     async findAll(): Promise<Asset[]> {
       return await this.assetRepository.find();
