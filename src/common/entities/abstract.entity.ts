@@ -1,8 +1,8 @@
 import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
-import { EntityInterface } from '../interfaces/entity.interface';
+import { AbstractEntityInterface } from '../interfaces/abstract.entity.interface';
 
 @Entity()
-export abstract class AbstractEntity implements EntityInterface {
+export abstract class AbstractEntity implements AbstractEntityInterface {
   @PrimaryGeneratedColumn()
   id: number;
 

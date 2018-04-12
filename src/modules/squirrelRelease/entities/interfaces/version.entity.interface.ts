@@ -1,8 +1,8 @@
 import { AssetEntityInterface } from './asset.entity.interface';
 import { ChannelEntityInterface } from './channel.entity.interface';
-import { EntityInterface } from '../../../../common/interfaces/entity.interface';
+import { AbstractEntityInterface } from '../../../../common/interfaces/abstract.entity.interface';
 
-export interface VersionEntityInterface extends EntityInterface {
+export interface VersionEntityInterface extends AbstractEntityInterface {
     readonly name: string;
     readonly assets: Array<AssetEntityInterface>;
     readonly channel: ChannelEntityInterface;

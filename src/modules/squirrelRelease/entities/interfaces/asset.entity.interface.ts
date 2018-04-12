@@ -1,8 +1,8 @@
 import { VersionEntityInterface } from './version.entity.interface';
 import { PlatformEntityInterface } from './platform.entity.interface';
-import { EntityInterface } from '../../../../common/interfaces/entity.interface';
+import { AbstractEntityInterface } from '../../../../common/interfaces/abstract.entity.interface';
 
-export interface AssetEntityInterface extends EntityInterface {
+export interface AssetEntityInterface extends AbstractEntityInterface {
     readonly name: string;
     readonly platform: PlatformEntityInterface;
     readonly fileType: string;

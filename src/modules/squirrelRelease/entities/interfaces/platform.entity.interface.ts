@@ -1,5 +1,5 @@
-import { EntityInterface } from '../../../../common/interfaces/entity.interface';
+import { AbstractEntityInterface } from '../../../../common/interfaces/abstract.entity.interface';
 
-export interface PlatformEntityInterface extends EntityInterface {
+export interface PlatformEntityInterface extends AbstractEntityInterface {
     readonly name: string;
 }
