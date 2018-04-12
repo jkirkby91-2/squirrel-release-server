@@ -1,4 +1,4 @@
-export interface EntityInterface {
+export interface AbstractEntityInterface {
     readonly id: number;
     readonly deletedAt: number;
     readonly createdAt: number;
